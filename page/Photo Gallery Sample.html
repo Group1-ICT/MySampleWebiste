@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> Group <#> - How to make image Gallery Using	HTML CSS and Javascript </title>
+		<!--
+		GROUP #
+		- SURNAME, FIRSTNAME
+		- SURNAME, FIRSTNAME
+		- SURNAME, FIRSTNAME
+		- SURNAME, FIRSTNAME
+
+		(CREATED BY SURNAME, FIRSTNAME) 
+		-->			
+
+		<!--Style CSS-->
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<h1>SOLAR PLANETS</h1>
+		<h6>CHECK EVERY IMAGE ON THE SCREEN</h6>		
+
+		<div class="myProducts">
+			<div class="myProducts-gallery">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg" alt="click here" onclick="myImageFunction(this)">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/PIA23791-Venus-RealAndEnhancedContrastViews-20200608_%28cropped2%29.jpg" alt="click here" onclick="myImageFunction(this)">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" alt="click here" onclick="myImageFunction(this)">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tharsis_and_Valles_Marineris_-_Mars_Orbiter_Mission_%2830055660701%29.png" alt="click here" onclick="myImageFunction(this)">				
+			</div>
+
+			<div class="image-container">
+				<img id="img-Box" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg" alt="click here">
+			</div>
+		</div>
+
+		<script>
+			function myImageFunction(productSmallImg) {
+				var productFullImg = document.getElementById("img-Box");
+				productFullImg.src = productSmallImg.src;
+			}
+		</script>
+	</body>
+
+</html>
